@@ -3,6 +3,11 @@ import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
+import AD1 from "../../statics/ad1.webp";
+import AD2 from "../../statics/ad2.webp";
+import AD3 from "../../statics/ad3.webp";
+import Image from "next/image";
+const adImages = [AD1, AD2, AD3]
 function GreySection() {
   return (
     <Box
@@ -13,10 +18,11 @@ function GreySection() {
         textAlign: "center",
         bgcolor: "lightgrey",
         p: 1,
+        width: '100%'
       }}
       component={"div"}
     >
-      <Container component={"div"}>
+      <Container  component={"div"}>
         <h3>Unlimited Advertising, One Place</h3>
         <h1>
           Spotlight your merchandise, to capture customer&apos;s attention both
@@ -31,12 +37,11 @@ function GreySection() {
             spacing={{ xs: 2, md: 3 }}
             columns={{ xs: 4, sm: 8, md: 12 }}
           >
-            {Array.from(Array(3)).map((_, index) => (
+            {adImages.map((_, index) => (
               <Grid item xs={2} sm={4} md={4} key={index}>
-                <Box
-                  component="div"
-                  sx={{ height: 200, bgcolor: "teal" }}
-                ></Box>
+                <>{/* Box component="div" sx={{ height: 200, bgcolor: "teal" }} */}
+                  <Image alt="" src={_} height={200} />
+                </>
               </Grid>
             ))}
           </Grid>

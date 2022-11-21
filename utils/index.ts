@@ -1,6 +1,7 @@
+import { StaticImageData } from "next/image"
 
 interface advert {
-    imageUrl: string,
+    imageUrl: StaticImageData,
     recommended: boolean,
     numOfAds: string,
     price: number,

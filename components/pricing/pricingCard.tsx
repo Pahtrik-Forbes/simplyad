@@ -7,13 +7,16 @@ import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import styles from "../../styles/Pricing.module.css";
 import Advert from "../../utils";
+import Image from "next/image";
 
 const CardInner = (props: Advert) => (
   <React.Fragment>
     <CardContent>
-      <Box sx={{ bgcolor: "grey", height: 70 }} component={"div"}>
-        {props.imageUrl}
-      </Box>
+      <Image
+        height={80}
+        src={props?.imageUrl}
+        alt="box"
+      />
       <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
         {props.numOfAds} Ad
       </Typography>

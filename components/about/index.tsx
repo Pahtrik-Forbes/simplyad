@@ -1,5 +1,7 @@
 import React from "react";
 import Container from "@mui/material/Container";
+import about from "../../statics/about.jpg";
+import Image from "next/image";
 function AboutPage() {
   return (
     <Container>
@@ -15,7 +17,7 @@ function AboutPage() {
         customers Who are in the end the most important part of the retail
         digital signage equation.
       </p>
-      <div style={{ height: 300, background: "aliceblue" }}></div>
+      <Image src={about} alt="abt_im" />
     </Container>
   );
 }

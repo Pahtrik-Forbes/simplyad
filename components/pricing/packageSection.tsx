@@ -5,47 +5,49 @@ import Grid from "@mui/material/Grid";
 import PricingCard from "./pricingCard";
 import styles from "../../styles/Pricing.module.css";
 import Button from "@mui/material/Button";
+import pd from "../../statics/prdef.webp";
+import pru from "../../statics/pruniq.webp";
 function PackageSection() {
   const advertPackages = [
     {
       recommended: false,
-      imageUrl: "Image Section",
+      imageUrl: pd,
       features: [
         "Your Ad is displayed at least 2,800 times on our network.",
-        " Ad cannot be changed.",
+        "Ad cannot be changed.",
       ],
       numOfAds: "One (1)",
-      price: 9600,
+      price: 9600.00,
     },
     {
       recommended: true,
-      imageUrl: "Image Section",
+      imageUrl: pru,
       features: [
         "Your Ad is displayed at least 2,800 times on our network.",
-        " Ad cannot be changed.",
+        "Option to change ad up to two(2) times.",
       ],
       numOfAds: "One (1)",
-      price: 9600,
+      price: 14400.00,
     },
     {
       recommended: false,
-      imageUrl: "Image Section",
+      imageUrl: pd,
       features: [
-        "Your Ad is displayed at least 2,800 times on our network.",
-        " Ad cannot be changed.",
+        "Your Ads are displayed a combined 8,400 times on our network.",
+        "Ads cannot be changed.",
       ],
-      numOfAds: "One (1)",
-      price: 9600,
+      numOfAds: "Three (3)",
+      price: 25200.00,
     },
     {
       recommended: false,
-      imageUrl: "Image Section",
+      imageUrl: pd,
       features: [
-        "Your Ad is displayed at least 2,800 times on our network.",
-        " Ad cannot be changed.",
+        "Your ads are displayed a combined 8,400 times on our network.",
+        "Option to change each ad up to two(2) times.",
       ],
-      numOfAds: "One (1)",
-      price: 9600,
+      numOfAds: "Three (3)",
+      price: 39600.00,
     },
   ];
   return (

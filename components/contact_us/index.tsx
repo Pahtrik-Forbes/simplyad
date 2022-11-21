@@ -40,7 +40,7 @@ function ContactUs() {
                   alignItems: "center",
                 }}
               >
-                <LocationOnIcon /> 21 Connelly dr, Kingston 4
+                <LocationOnIcon /> 21 Connolley Avenue, Kingston 4
               </Typography>
               <Typography
                 sx={{
@@ -49,7 +49,7 @@ function ContactUs() {
                   alignItems: "center",
                 }}
               >
-                <EmailIcon /> info@simplyad.com
+                <EmailIcon /> sales@simplyad.net
               </Typography>
               <Typography
                 sx={{
@@ -58,7 +58,7 @@ function ContactUs() {
                   alignItems: "center",
                 }}
               >
-                <CallIcon /> (876)123-4567
+                <CallIcon /> 1 (876) 453-9077
               </Typography>
             </Grid>
           </Grid>
