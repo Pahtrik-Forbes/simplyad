@@ -3,10 +3,10 @@ import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid";
 import React from "react";
 import styles from "../../styles/Home.module.css";
-import qs from "../../statics/qs.webp"
-import rs from "../../statics/rs.webp"
-import pnp from "../../statics/pnp.webp"
-import aff from "../../statics/aff.webp"
+import qs from "../../statics/qs.webp";
+import rs from "../../statics/rs.webp";
+import pnp from "../../statics/pnp.webp";
+import aff from "../../statics/aff.webp";
 import Image from "next/image";
 
 function GradientSection() {
@@ -23,7 +23,7 @@ function GradientSection() {
         </section>
         <Grid container sx={{ mb: 3 }} spacing={{ xs: 2, md: 3 }}>
           <Grid item xs={12} sm={4} md={4}>
-            <Image src={qs} height={150} alt="."/>
+            <Image src={qs} height={150} alt="." />
           </Grid>
           <Grid item xs={12} sm={8} md={8}>
             <div style={{ textAlign: "start" }}>
@@ -45,12 +45,12 @@ function GradientSection() {
             </div>
           </Grid>
           <Grid item xs={12} sm={4} md={4}>
-          <Image src={pnp} height={150} alt="."/>
+            <Image src={pnp} height={150} alt="." />
           </Grid>
         </Grid>
         <Grid container sx={{ mb: 3 }} spacing={{ xs: 1, md: 3 }}>
           <Grid item xs={12} sm={4} md={4}>
-          <Image src={rs} height={150} alt="."/>
+            <Image src={rs} height={150} alt="." />
           </Grid>
           <Grid item xs={12} sm={8} md={8}>
             <div>
@@ -77,7 +77,7 @@ function GradientSection() {
             </div>
           </Grid>
           <Grid item xs={12} sm={4} md={4}>
-          <Image src={aff} height={150} alt="."/>
+            <Image src={aff} height={150} alt="." />
           </Grid>
         </Grid>
       </Container>

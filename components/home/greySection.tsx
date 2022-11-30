@@ -7,22 +7,22 @@ import AD1 from "../../statics/ad1.webp";
 import AD2 from "../../statics/ad2.webp";
 import AD3 from "../../statics/ad3.webp";
 import Image from "next/image";
-const adImages = [AD1, AD2, AD3]
+const adImages = [AD1, AD2, AD3];
 function GreySection() {
   return (
     <Box
       sx={{
+        bgcolor: "lightgrey",
+        p: 1,
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
         textAlign: "center",
-        bgcolor: "lightgrey",
-        p: 1,
-        width: '100%'
+        width: "100%",
       }}
       component={"div"}
     >
-      <Container  component={"div"}>
+      <Container component={"div"}>
         <h3>Unlimited Advertising, One Place</h3>
         <h1>
           Spotlight your merchandise, to capture customer&apos;s attention both
@@ -38,9 +38,10 @@ function GreySection() {
             columns={{ xs: 4, sm: 8, md: 12 }}
           >
             {adImages.map((_, index) => (
-              <Grid item xs={2} sm={4} md={4} key={index}>
-                <>{/* Box component="div" sx={{ height: 200, bgcolor: "teal" }} */}
-                  <Image alt="" src={_} height={200} />
+              <Grid sx={{position: 'relative', height: 250,}} item xs={2} sm={4} md={4} key={index}>
+                <>
+                  {/* Box component="div" sx={{ height: 200, bgcolor: "teal" }} */}
+                  <Image fill alt="" src={_} />
                 </>
               </Grid>
             ))}
