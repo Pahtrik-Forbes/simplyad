@@ -13,41 +13,41 @@ function PackageSection() {
       recommended: false,
       imageUrl: pd,
       features: [
-        "Your Ad is displayed at least 2,800 times on our network.",
-        "Ad cannot be changed.",
+        "One (1) outdoor sign.",
+        "Two (2) indoor signs.",
       ],
-      numOfAds: "One (1)",
-      price: 9600.00,
+      numOfAds: "One (1) Week",
+      price: 23000.00,
     },
     {
       recommended: true,
       imageUrl: pru,
       features: [
-        "Your Ad is displayed at least 2,800 times on our network.",
-        "Option to change ad up to two(2) times.",
+        "One (1) outdoor sign.",
+        "Two (2) indoor signs.",
       ],
-      numOfAds: "One (1)",
-      price: 14400.00,
+      numOfAds: "One (1) Month",
+      price: 55000.00,
     },
     {
       recommended: false,
       imageUrl: pd,
       features: [
-        "Your Ads are displayed a combined 8,400 times on our network.",
-        "Ads cannot be changed.",
+        "One (1) outdoor sign.",
+        "Two (2) indoor signs.",
       ],
-      numOfAds: "Three (3)",
-      price: 25200.00,
+      numOfAds: "Six (6) Months",
+      price: 45000.00,
     },
     {
       recommended: false,
       imageUrl: pd,
       features: [
-        "Your ads are displayed a combined 8,400 times on our network.",
-        "Option to change each ad up to two(2) times.",
+        "One (1) outdoor sign.",
+        "Two (2) indoor signs.",
       ],
-      numOfAds: "Three (3)",
-      price: 39600.00,
+      numOfAds: "Twelve (12) Months",
+      price: 38000.00,
     },
   ];
   return (
@@ -76,7 +76,7 @@ function PackageSection() {
                 md={3}
                 key={index}
               >
-                {_.recommended ? (
+                {/* _.recommended ? (
                   <Box component={"div"} className={styles.badge}>
                     <Button
                       variant="contained"
@@ -85,7 +85,7 @@ function PackageSection() {
                       Recommended
                     </Button>
                   </Box>
-                ) : null}
+                ) : null */}
                 {
                   <PricingCard
                     recommended={_.recommended}

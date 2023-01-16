@@ -38,11 +38,10 @@ function GreySection() {
             columns={{ xs: 4, sm: 8, md: 12 }}
           >
             {adImages.map((_, index) => (
-              <Grid sx={{position: 'relative', height: 250,}} item xs={2} sm={4} md={4} key={index}>
-                <>
-                  {/* Box component="div" sx={{ height: 200, bgcolor: "teal" }} */}
+              <Grid item xs={12} sm={4} md={4} key={index}>
+                <Box sx={{ position: "relative", height: 250 }}>
                   <Image fill alt="" src={_} />
-                </>
+                </Box>
               </Grid>
             ))}
           </Grid>

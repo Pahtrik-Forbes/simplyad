@@ -18,12 +18,12 @@ const CardInner = (props: Advert) => (
         alt="box"
       />
       <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
-        {props.numOfAds} Ad
+        {props.numOfAds}
       </Typography>
       <Typography variant="h5" component="div">
-        ${props.price}
+        ${props.price.toLocaleString()}
       </Typography>
-      <Typography>per/month</Typography>
+      <Typography>/{props.price < 30000 ? 'week' : 'month'}</Typography>
       <CardActions sx={{ justifyContent: "center" }}>
         <Button variant="contained" size="small">
           Select
